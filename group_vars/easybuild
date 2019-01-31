@@ -1,0 +1,37 @@
+    #
+    # information for soft user if no soft user already defined
+    #
+    easybuild_user: soft
+    easybuid_uid: 90000
+    easybuild_home: "/usr/local/Software/"
+    #
+    #  path to define where easybuild has to write the module/software/source
+    #
+    prefix_arch: "/opt/cecisw" # no final slash here since this will bug the automount
+    prefix_private: "/opt/sw" 
+    prefix_ceci: "/CECI/soft/cecisw"
+    prefix_sw: "/home/localsoft" 
+    prefix_eb:  "{{ prefix_arch }}/arch/easybuild/"
+    prefix_priv_eb:  "{{ prefix_private }}/arch/easybuild/"
+    prefix_foss: "{{ prefix_eb }}/default/"
+    gpfs_ip: gw-ucl
+    storage_ip: lm3-n
+    prefix_storage: /storage/localsoft
+    prefix_sources: /CECI/soft/src/easybuild
+    #
+    # only for single_deployement [act as default for advanced option]
+    #
+    EXTRAMODULEPATH: ""
+    eb_additional_options: ""
+    #
+    #
+    # 
+    #
+    # handling foss search if the associate eb file does not exits
+    #
+    strict_search: False
+    #
+    #
+    #
+    intel_license: /trinity/shared/licenses/intel/ # directory where to store the license.lic
+    delegate_salt: lm3-m001

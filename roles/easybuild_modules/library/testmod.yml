@@ -1,0 +1,22 @@
+- name: test my new module
+  connection: local
+  hosts: localhost
+  tasks:
+  - name: run the new module
+    easybuild:
+         package: 'foss-2017a.eb'
+         additional_options: '--dry-run'
+         installpath_modules: '/opt/cecisw/arch/easybuild//default//modules/all'
+         search_eb: 'False'
+         search_package: 'Autoconf'
+         search_toolchain: 'foss2017a'
+         special_edit: 'edit_openmpi_for_slurm'
+         special_edit_parameters: 'foss-2017a.eb'
+    become: yes
+    become_user: soft
+#
+#- name: test my new module
+#  connection: local
+#  hosts: localhost
+#  tasks:
+#  - name: run the new module

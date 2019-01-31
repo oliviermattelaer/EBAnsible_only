@@ -1,0 +1,14 @@
+{
+    "ANSIBLE_MODULE_ARGS": {
+        "package": "foss-2017a.eb",    
+	"installpath_modules": "/opt/cecisw/arch/easybuild//default//modules/all",
+	"additional_options":"--dry-run",
+	"keep_std":"True",
+        "search_eb":"False",
+	"search_package":"Bison",
+	"search_toolchain": "foss,2017a",
+	"search_version": "",
+	"special_edit":"edit_openmpi_for_slurm",
+	"special_edit_parameters":"foss-2017a.eb"
+	}
+}
